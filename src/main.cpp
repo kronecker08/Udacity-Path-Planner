@@ -59,9 +59,13 @@ int main(int argc, const char **argv)
     // Build Model.
     RouteModel model{osm_data};
     float start_x, start_y, end_x, end_y;
+    std::cout<<"Enter Start X between 0 to 100"<<std::endl;
     std::cin>>start_x;
+    std::cout<<"Enter Start Y between 0 to 100"<<std::endl;
     std::cin>>start_y;
+    std::cout<<"Enter End X between 0 to 100"<<std::endl;
     std::cin>>end_x;
+    std::cout<<"Enter End Y between 0 to 100"<<std::endl;
     std::cin>>end_y;
 
     // Create RoutePlanner object and perform A* search.
